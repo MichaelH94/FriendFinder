@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friend Finder app for the KU Coding Bootcamp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelH94/FriendFinder.git"
+  },
+  "author": "Michael Haggard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelH94/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/MichaelH94/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
