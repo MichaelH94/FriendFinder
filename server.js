@@ -8,8 +8,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-require(path.join(__dirname, '/app/routing/apiRoutes.js'))(app);
-require(path.join(__dirname, '/app/routing/htmlRoutes.js'))(app);
+
 
 // Bodyparser functions - this is parsing middleware Node library we went over in class
 app.use(bodyParser.json());
@@ -20,6 +19,9 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json({
     type: "application/vnd.api+json"
 })); // Vendor API handling
+
+require(path.join(__dirname, '/app/routing/apiRoutes.js'))(app);
+require(path.join(__dirname, '/app/routing/htmlRoutes.js'))(app);
 
 app.listen(PORT, function() { 
     console.log("Listening to PORT: " + PORT);
